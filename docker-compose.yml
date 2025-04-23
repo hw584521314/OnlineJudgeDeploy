@@ -17,6 +17,7 @@ services:
       - POSTGRES_USER=onlinejudge
       - POSTGRES_PASSWORD=onlinejudge
 
+#judge server，整合了judger
   oj-judge:
     image: registry.cn-hongkong.aliyuncs.com/oj-image/judge:1.6.1
     restart: always
@@ -37,11 +38,13 @@ services:
     environment:
       - SERVICE_URL=http://oj-judge:8080
       - BACKEND_URL=http://oj-backend:8000/api/judge_server_heartbeat/
-      - TOKEN=CHANGE_THIS
+      - TOKEN=335fe12e208d95f03fa0bc403b9eb0bf
       # - judger_debug=1
-
+#web后端，Django
   oj-backend:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    #image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    #绑定到本地的镜像
+    image: oj-image/backend:1.7.0
     restart: always
     depends_on:
       - oj-redis
@@ -53,9 +56,25 @@ services:
       - POSTGRES_DB=onlinejudge
       - POSTGRES_USER=onlinejudge
       - POSTGRES_PASSWORD=onlinejudge
-      - JUDGE_SERVER_TOKEN=CHANGE_THIS
+      - JUDGE_SERVER_TOKEN=335fe12e208d95f03fa0bc403b9eb0bf
       # - FORCE_HTTPS=1
       # - STATIC_CDN_HOST=cdn.oj.com
     ports:
       - "0.0.0.0:80:8000"
       - "0.0.0.0:443:1443"
+      #以下用于开发调试前端
+      #- "0.0.0.0:8080:8080"
+  
+  #测试用例的同步服务
+  oj-rsync-master:
+    image: registry.cn-hangzhou.aliyuncs.com/onlinejudge/oj_rsync
+    container_name: oj-rsync-master
+    volumes:
+      - ./data/backend/test_case:/test_case:ro
+      - ./data/rsync_master:/log
+    environment:
+      - RSYNC_MODE=master
+      - RSYNC_USER=ojrsync
+      - RSYNC_PASSWORD=ojrsync
+    ports:
+      - "0.0.0.0:873:873"
