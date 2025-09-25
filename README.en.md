@@ -40,3 +40,10 @@ Wait for the command execution to complete, and then run `docker ps -a`. When yo
 Access the server's HTTP 80 port or HTTPS 443 port through a browser, and you can start using it. The background management path is `/admin`, the super administrator user name automatically added during the installation process is `root`, and the password is `rootroot`. **If you log in successfully, please change your account password immediately.**.
 
 Don't forget to read the documentation: http://opensource.qduoj.com/
+
+## Technical Support
+This project is the secondary development of the original project:QDUOJ. Add the functionality for Examination.
+
+Due to the developer's limited personal time, no free technical support is provided. Please resolve any setup or usage issues by referring to the source code.
+
+If you require technical support, please join QQ group: 1062579260 or email: 1846853156@qq.com

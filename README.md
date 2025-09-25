@@ -62,6 +62,13 @@ Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请
 
 若需要对系统进行修改或二次开发，请参照各模块的**README**，修改完成后需自行构建Docker镜像并修改`docker-compose.yml`
 
+## 技术支持
+该项目是基于 [QingdaoU/OnlineJudge](https://github.com/QingdaoU/OnlineJudge) 进行二次开发的产物，主要增加了对考试功能的支持。
+
+由于开发者个人时间有限，不提供免费的技术支持，请自行根据源码解决搭建和使用过程中的问题
+
+如果需要技术支持，请加QQ群： 1062579260 或发邮件至：184685315@qq.com
+
 ## 遇到了问题？
 
 请参照: [http://opensource.qduoj.com/](http://opensource.qduoj.com/#/onlinejudge/faq) ，如有其他问题请入群讨论或提issue。
