@@ -47,3 +47,6 @@ This project is the secondary development of the original project:QDUOJ. Add the
 Due to the developer's limited personal time, no free technical support is provided. Please resolve any setup or usage issues by referring to the source code.
 
 If you require technical support, please join QQ group: 1062579260 or email: 1846853156@qq.com
+
+if you think this project is helpful, please buy author a cup of coffee, thanks!
+<img src="./个人收款码_QR.jpg">
