@@ -8,6 +8,38 @@
 如果觉得该二次开发有帮助，请作者喝杯咖啡吧
 <img src="./个人收款码_QR.jpg">
 
+
+
+## 一些截图
+
+### 学生视图
+
+考试列表
+<img src="./shortcut/exams.png">
+
+考试历史
+<img src="./shortcut/exam_history.png">
+
+考试问题列表
+<img src="./shortcut/exams_problems.png">
+
+我的分数
+<img src="./shortcut/mystore.png">
+
+### 管理员视图
+
+windows下的容器列表
+<img src="./shortcut/containers.png">
+
+系统运行模式切换
+<img src="./shortcut/mode.png">
+
+
+管理员视角下的考试相关功能
+<img src="./shortcut/exam_detail.png">
+
+
+
 简体中文 | [English](https://github.com/QingdaoU/OnlineJudgeDeploy/blob/2.0/README.en.md)
 
 ## 环境准备
