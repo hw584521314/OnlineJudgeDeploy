@@ -1,3 +1,43 @@
+## Technical Support
+This project is the secondary development of the original project:QDUOJ. Add the functionality for Examination.
+
+Due to the developer's limited personal time, no free technical support is provided. Please resolve any setup or usage issues by referring to the source code.
+
+If you require technical support, please join QQ group: 1062579260 or email: 1846853156@qq.com
+
+if you think this secondary development is helpful, please buy author a cup of coffee, thanks!
+<img src="./个人收款码_QR.jpg" width="300" >
+
+## some shotcuts
+
+### student view
+
+exams from student view
+<img src="./shortcut/exams.png">
+
+exam history
+<img src="./shortcut/exam_history.png">
+
+problems under exam from student view
+<img src="./shortcut/exams_problems.png">
+
+my store
+<img src="./shortcut/mystore.png">
+
+### admin view
+
+containers under windows
+<img src="./shortcut/containers.png">
+
+running mode
+<img src="./shortcut/mode.png">
+
+
+exams from admin view
+<img src="./shortcut/exam_detail.png">
+
+## Documentation
+
 [简体中文](https://github.com/QingdaoU/OnlineJudgeDeploy/blob/2.0/README.md) | English
 
 ## Environmental preparation (Linux)
@@ -41,12 +81,4 @@ Access the server's HTTP 80 port or HTTPS 443 port through a browser, and you ca
 
 Don't forget to read the documentation: http://opensource.qduoj.com/
 
-## Technical Support
-This project is the secondary development of the original project:QDUOJ. Add the functionality for Examination.
 
-Due to the developer's limited personal time, no free technical support is provided. Please resolve any setup or usage issues by referring to the source code.
-
-If you require technical support, please join QQ group: 1062579260 or email: 1846853156@qq.com
-
-if you think this project is helpful, please buy author a cup of coffee, thanks!
-<img src="./个人收款码_QR.jpg">
