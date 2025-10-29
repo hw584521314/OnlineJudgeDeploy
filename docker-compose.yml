@@ -54,7 +54,7 @@ services:
       # - judger_debug=1
   #web后端，Django
   oj-backend:
-    image: registry.cn-hangzhou.aliyuncs.com/cqcet/oj-backend:2.2
+    image: registry.cn-hangzhou.aliyuncs.com/cqcet/oj-backend:2.3
     #绑定到本地的镜像
     #image: oj-image/backend:2.0
     restart: always
